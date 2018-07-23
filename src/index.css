@@ -1,0 +1,229 @@
+
+ul {
+  list-style-type: none;
+}
+
+head, body {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: proxima-nova;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.Header {
+  display: flex;
+  width: 100%;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #E6E7E8;
+}
+
+.Header_Logo {
+  flex-direction: row;
+  align-items: center;
+}
+
+.Logo svg {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+
+.SearchBar {
+  margin: 20px;
+  text-align: center;
+}
+
+.SearchBar input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.projectYoutubeLogo_Link a:link {
+  text-decoration: none;
+}
+
+.Media_image, .VideoList_media, .VideoList_mediaLeft {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  display: -webkit-inline-box;
+}
+
+.VideoList_group {
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+}
+
+.VideoList_group:hover {
+  cursor: pointer;
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+  border-top: 0.5px solid #E6E7E8;
+}
+
+.Media_heading {
+  font-size: 13px;
+  padding-left: 10px;
+  font-weight: 800;
+}
+
+.VideoBody {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #E6E7E8;
+}
+
+.VideoDetailsCard {
+  height: auto;
+}
+
+.VideoDetailTitle {
+  font-weight: 800;
+}
+
+.Menulinks {
+  display: flex;
+  margin-top: 69px;
+  margin-bottom: 69px;
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+
+  .Loading {
+    height: 70px;
+    font-size: 70px;
+    margin: 20px;
+    top: 160px;
+    left: 50px;
+    position: relative;
+  }
+
+  .Header {
+    height: 85px;
+  }
+
+  .SearchBar input {
+    width: 225px;
+  }
+
+  .VideoBody {
+    flex-direction: column;
+  }
+
+  .CurrentVideoContainer {
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .VideoDetailsCard {
+    margin-left: 10px;
+    width: 350px;
+    height: auto;
+  }
+
+  .VideoList {
+    width: 100%;
+    margin-top: 150px;
+    margin-left: 10px;
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+  .Loading {
+    height: 70px;
+    font-size: 55px;
+    margin: 20px;
+    top: 100px;
+    left: 250px;
+    position: relative;
+  }
+
+  .Header {
+    height: 85px;
+  }
+
+  .SearchBar input {
+    width: 600px;
+  }
+
+  .CurrentVideoContainer, .VideoDetailsCard {
+    height: 265px;
+    width: 450px;
+    margin: 10px;
+  }
+
+  .VideoDetailsCard {
+    width: 430px;
+    height: auto;
+  }
+
+  .VideoList {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .VideoBody {
+    height: 600px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  body {
+    overflow-y: hidden;
+  }
+
+  .Loading {
+    height: 235px;
+    font-size: 185px;
+    margin: 20px;
+    top: 160px;
+    left: 320px;
+    position: relative;
+  }
+
+  .Header {
+    height: 80px;
+  }
+
+  .SearchBar input {
+    width: 1024px;
+  }
+
+  .CurrentVideoContainer, .VideoDetailsCard {
+    height: 512px;
+    width: 1024px;
+    margin: 10px;
+  }
+
+  .VideoDetailsCard {
+    width: 512px;
+    height: auto;
+  }
+
+  .VideoList {
+    width: 450px;
+    margin: 20px;
+  }
+
+  .VideoBody {
+    height: 700px;
+  }
+}
